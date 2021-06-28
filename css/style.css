@@ -4,18 +4,73 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Common */
 
 /* / Common */
 
 /* Main */
+    main {
+        width: 100%;
+        height: 90vh;
+        background-color: black;
+    }
 
+    .main-top {
+        position: relative;
+        height: 5%;
+        width: 100%;
+    }
+
+    .top-bar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10%;
+        margin-top: 15px;
+    }
+    .btn-top {
+        display: inline;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+        line-height: 100%;
+        color: white;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(61,61,61,1) 100%);
+    }
+
+    .call-wrap {
+        width: 90%;
+        height: 95%;
+        margin: 0 auto;
+    }
 /* / Main */
 
 /* Footer */
-
+    footer {
+        width: 100%;
+        height: 10vh;
+    }
 /* / Footer */
 
 /* Debug */
+    .debug footer {
+        background-color: lightgray;
+    }
 
+    .debug .btn-top {
+        background-color: lightgreen;
+    }
+
+    .debug .main-top {
+        background-color: yellow;
+    }
+
+    .call-wrap {
+        background-color: lightpink;
+    }
 /* / Debug */
