@@ -9,7 +9,16 @@ body {
 }
 
 /* Common */
+.green i {
+    color: #4bc800;
+}
 
+.active {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to top, #ebf874, #76dd00,#ebf874);
+}
 /* / Common */
 
 /* Main */
@@ -41,6 +50,12 @@ body {
         color: white;
         background: rgb(0,0,0);
         background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(61,61,61,1) 100%);
+    }
+
+    .btn-top:hover {
+        cursor: pointer;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgb(114, 114, 114) 0%, rgb(199, 199, 199) 100%);
     }
 
     .main-container {
@@ -110,15 +125,99 @@ body {
     .right i {
         color: #2ebaff;
     }
+
+    .user:hover {
+        background-size: 150%;    
+        cursor: pointer;
+    }
+
+    .page i:hover {
+        color: white;
+        cursor: pointer;
+    }
 /* / Main */
 
 /* Footer */
     footer {
+        display: flex;
+        justify-content: space-between;
         width: 100%;
         height: 10vh;
-        /* background: rgb(0,0,0);
-        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(61,61,61,1) 100%); */
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(61,61,61,1) 100%);
     }
+
+    .toolbar-left,
+	.toolbar-center,
+	.toolbar-right	{
+		display: flex;
+		color: white;
+        align-items: center;
+        height: 100%;
+    }
+
+    .toolbar-left {
+        justify-content: space-around;        
+    }
+
+    .toolbar-center {
+        justify-content: space-around;        
+    }
+
+    .toolbar-right {
+        justify-content: center;
+        background-color:rgba(151, 151, 151, 0.3);
+        color: red;
+        padding: 0 10px;
+        font-size: 18px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .btn-wrap {
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        margin: 10px;
+    }
+
+    .btn-wrap i {
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+
+    .btn-wrap p {
+        font-size: 18px;
+    }
+
+    #angleup {
+        font-size: 30px;
+    }
+
+    #littleup {
+        font-size: 16px;
+    }
+
+    .btn-wrap span {
+        position: absolute;
+        top: 0;
+    }
+
+    .btn:hover {
+        background-color:rgba(151, 151, 151, 0.3);
+        cursor: pointer;
+    }
+
+    .toolbar-right .btn:hover {
+        background-color: none;
+        color: white;
+    }
+
 /* / Footer */
 
 /* Debug */
@@ -141,5 +240,19 @@ body {
     .debug .user {
         background-color: lightcoral;
         border: 2px solid black;
+    }
+
+    .debug .toolbar-left {
+        background-color: cyan;
+        
+        height: 100%;
+    }
+    .debug .toolbar-center {
+        background-color: gray;
+        
+    }
+    .debug .toolbar-right {
+        background-color: red;
+        height: 100%;
     }
 /* / Debug */
